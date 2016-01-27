@@ -1,0 +1,78 @@
+;Outlook Profile data
+
+[General]
+ProfileName=365DisplayName Office 365 Profile
+OverwriteProfile=Yes
+DefaultProfile=Yes
+DefaultStore=Service2
+
+[Service List]
+Service1=Microsoft Outlook Client
+ServiceEGS=Exchange Global Section
+Service2=Microsoft Exchange Server
+Service3=Outlook Address Book
+
+[Service1]
+OverwriteExistingService=Yes
+CachedExchangeMode=0x00000003
+CachedExchangeSlowDetect=true
+
+[ServiceEGS]
+CachedExchangeConfigFlags=0x00000900
+HomeServer=365ExchGuid@365domain.com
+MailboxName=365DisplayName
+RPCoverHTTPflags=0x002F
+RPCProxyServer=outlook.office365.com
+RPCProxyPrincipalName=msstd:outlook.com
+RPCProxyAuthScheme=0x0001
+LogonSecurity=0x8000F001
+
+[Service2]
+OverwriteExistingService=Yes
+UniqueService=Yes
+HomeServer=365ExchGuid@365domain.com
+MailboxName=365DisplayName
+AccountName=Microsoft Exchange Server
+
+[Service3]
+
+[Microsoft Exchange Server]
+ServiceName=MSEMS
+MDBGUID=5494A1C0297F101BA58708002B2A2517
+MailboxName=PT_STRING8,0x6607
+HomeServer=PT_STRING8,0x6608
+OfflineAddressBookPath=PT_STRING8,0x660E
+OfflineFolderPathAndFilename=PT_STRING8,0x6610
+
+[Exchange Global Section]
+SectionGUID=13dbb0c8aa05101a9bb000aa002fc45a
+MailboxName=PT_STRING8,0x6607
+HomeServer=PT_STRING8,0x6608
+RPCoverHTTPflags=PT_LONG,0x6623
+RPCProxyServer=PT_UNICODE,0x6622
+RPCProxyPrincipalName=PT_UNICODE,0x6625
+RPCProxyAuthScheme=PT_LONG,0x6627
+CachedExchangeConfigFlags=PT_LONG,0x6629
+LogonSecurity=PT_LONG,0x6619
+
+[Microsoft Outlook Client]
+SectionGUID=0a0d020000000000c000000000000046
+FormDirectoryPage=PT_STRING8,0x0270
+WebServicesLocation=PT_STRING8,0x0271
+ComposeWithWebServices=PT_BOOLEAN,0x0272
+PromptWhenUsingWebServices=PT_BOOLEAN,0x0273
+OpenWithWebServices=PT_BOOLEAN,0x0274
+CachedExchangeMode=PT_LONG,0x041f
+CachedExchangeSlowDetect=PT_BOOLEAN,0x0420
+
+[Outlook Address Book]
+ServiceName=CONTAB
+
+[Personal Folders]
+ServiceName=MSPST MS
+AliasServiceName=PT_STRING8,0x3001
+Comments=PT_STRING8,0x3004
+PathToPersonalFolders=PT_STRING8,0x6700
+RememberPassword=PT_BOOLEAN,0x6701
+EncryptionType=PT_LONG,0x6702
+Password=PT_STRING8,0x6703
